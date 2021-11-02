@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="unwritable_sale_discount.list">
+      <field name="name">unwritable_sale_discount list</field>
+      <field name="model">unwritable_sale_discount.unwritable_sale_discount</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="unwritable_sale_discount.action_window">
+      <field name="name">unwritable_sale_discount window</field>
+      <field name="res_model">unwritable_sale_discount.unwritable_sale_discount</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="unwritable_sale_discount.action_server">
+      <field name="name">unwritable_sale_discount server</field>
+      <field name="model_id" ref="model_unwritable_sale_discount_unwritable_sale_discount"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="unwritable_sale_discount" id="unwritable_sale_discount.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="unwritable_sale_discount.menu_1" parent="unwritable_sale_discount.menu_root"/>
+    <menuitem name="Menu 2" id="unwritable_sale_discount.menu_2" parent="unwritable_sale_discount.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="unwritable_sale_discount.menu_1_list" parent="unwritable_sale_discount.menu_1"
+              action="unwritable_sale_discount.action_window"/>
+    <menuitem name="Server to list" id="unwritable_sale_discount" parent="unwritable_sale_discount.menu_2"
+              action="unwritable_sale_discount.action_server"/>
+-->
+  </data>
+</odoo>
